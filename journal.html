@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal | Aura Luxury</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">AURA <span>LUXURY</span></a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="journal.html" class="active">Journal</a></li>
+                    <li><a href="about.html">Our Craft</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Hero -->
+    <section class="hero" style="height: 80vh; min-height: 400px;">
+        <div class="hero-bg" style="background-image: url('img/journal-hero.jpg'); background-position: center;">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>The Journal</h1>
+            <p>Stories of craftsmanship, heritage, and timeless elegance.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Featured Article -->
+    <section class="section-padding" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Story</h2>
+            </div>
+            <div
+                style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap; background: var(--bg-light); border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80"
+                        alt="Featured Article" style="width: 100%; height: 100%; object-fit: cover; min-height: 400px;">
+                </div>
+                <div style="flex: 1; min-width: 300px; padding: 40px;">
+                    <span
+                        style="color: var(--secondary-color); font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Watchmaking</span>
+                    <h3
+                        style="font-family: var(--font-heading); font-size: 2rem; margin: 15px 0; color: var(--primary-color);">
+                        The Anatomy of a Mechanical Movement</h3>
+                    <p style="margin-bottom: 20px;">Dive deep into the intricate world of mechanical watchmaking.
+                        Discover the hundreds of microscopic components that beat in perfect harmony.</p>
+                    <a href="#" class="btn-link">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Latest Articles Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest Articles</h2>
+            </div>
+            <div class="category-grid">
+                <!-- Article 1 -->
+                <div class="category-card">
+                    <img src="img/article1.jpg" alt="Article Image"
+                        style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <span
+                            style="color: var(--secondary-color); font-size: 0.8rem; text-transform: uppercase;">Jewelry
+                            Guide</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin: 10px 0;">How to Choose
+                            the Perfect Engagement Ring</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">A comprehensive guide to the 4Cs
+                            and finding the ring of her dreams.</p>
+                        <a href="#" class="btn-link">Read More</a>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=600&q=80"
+                        alt="Article Image" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <span
+                            style="color: var(--secondary-color); font-size: 0.8rem; text-transform: uppercase;">Gemstones</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin: 10px 0;">The Allure of
+                            Sapphires</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Exploring the history and
+                            breathtaking beauty of the world's most sought-after blue gem.</p>
+                        <a href="#" class="btn-link">Read More</a>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80"
+                        alt="Article Image" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <span
+                            style="color: var(--secondary-color); font-size: 0.8rem; text-transform: uppercase;">Style</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin: 10px 0;">Styling Vintage
+                            Timepieces</h4>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">How to seamlessly incorporate
+                            vintage watches into a modern wardrobe.</p>
+                        <a href="#" class="btn-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Tags/Categories -->
+    <section class="section-padding" style="background-color: var(--white); text-align: center;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Browse by Category</h2>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="#"
+                    style="padding: 10px 20px; background: var(--bg-light); border-radius: 20px; border: 1px solid #ddd;">Fine
+                    Jewelry</a>
+                <a href="#"
+                    style="padding: 10px 20px; background: var(--bg-light); border-radius: 20px; border: 1px solid #ddd;">Horology</a>
+                <a href="#"
+                    style="padding: 10px 20px; background: var(--bg-light); border-radius: 20px; border: 1px solid #ddd;">Style
+                    Guides</a>
+                <a href="#"
+                    style="padding: 10px 20px; background: var(--bg-light); border-radius: 20px; border: 1px solid #ddd;">Behind
+                    the Scenes</a>
+                <a href="#"
+                    style="padding: 10px 20px; background: var(--bg-light); border-radius: 20px; border: 1px solid #ddd;">News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Newsletter -->
+    <section class="featured-banner" style="padding: 80px 0;">
+        <div class="container banner-container">
+            <div class="banner-content">
+                <h2>Never Miss a Story</h2>
+                <p>Subscribe to our newsletter for the latest journal entries, collections, and exclusive invitations.
+                </p>
+                <form style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="Your email address"
+                        style="flex: 1; padding: 15px; border: none; border-radius: 4px;" required>
+                    <button type="submit" class="btn btn-primary" style="border-radius: 4px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">AURA <span>LUXURY</span></a>
+                <p>Elevating everyday moments with exquisite craftsmanship and timeless designs.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="collections.html">Rings</a></li>
+                    <li><a href="collections.html">Necklaces</a></li>
+                    <li><a href="collections.html">Earrings</a></li>
+                    <li><a href="collections.html">Watches</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Care Guide</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Fine Jewelry Watches Discovery & Exploration Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" style="display: none;"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+
+</html>
