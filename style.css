@@ -118,6 +118,17 @@ img {
     color: var(--primary-color);
 }
 
+.btn-outline-dark {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
 .btn-link {
     color: var(--secondary-color);
     font-weight: 700;
@@ -286,6 +297,9 @@ header.sticky .header-container {
     position: relative;
     z-index: 3;
     max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 8px;
 }
 
 .hero .subtitle {
@@ -606,21 +620,27 @@ header.sticky .header-container {
     transform: translateY(-5px);
 }
 
+.auth-hover {
+    transition: var(--transition);
+}
+.auth-hover:hover {
+    color: var(--primary-color) !important;
+    text-decoration: underline;
+}
+.auth-hover-text {
+    transition: var(--transition);
+}
+.auth-hover-text:hover {
+    color: var(--primary-color) !important;
+}
+
 /* =======================================
    Responsive Media Queries
    ======================================= */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .category-grid > .category-card, .feature-card {
         flex: 1 1 calc(50% - 15px);
         max-width: calc(50% - 15px);
-    }
-    .img-wrapper {
-        height: auto;
-    }
-    .img-wrapper img {
-        height: auto;
-        object-fit: contain;
-        max-height: 400px;
     }
     .about-content {
         flex-direction: column;
@@ -632,24 +652,11 @@ header.sticky .header-container {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media (max-width: 768px) {
-    .category-grid > .category-card, .feature-card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
     .nav-menu {
-        display: none; /* simple hidden for mobile, in a real app add a toggle menu */
+        display: none;
     }
     .mobile-menu-btn {
         display: block;
-    }
-    .hero h1 {
-        font-size: 3rem;
-    }
-    .footer-grid {
-        grid-template-columns: 1fr;
     }
     .nav-menu ul li a.login-btn {
         margin-left: 0;
@@ -658,18 +665,34 @@ header.sticky .header-container {
         margin-top: 10px;
     }
 }
-.nav-menu ul li a.btn::after {
-    display: none;
-}
-.nav-menu ul li a.btn:hover {
-    color: var(--white);
-}
 
 @media (max-width: 768px) {
+    .category-grid > .category-card, .feature-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
     .hero-content .btn {
         width: 100%;
         display: block;
         box-sizing: border-box;
         text-align: center;
     }
+    .journal-newsletter-form {
+        flex-direction: column;
+    }
+    .journal-newsletter-form button {
+        width: 100%;
+    }
+}
+.nav-menu ul li a.btn::after {
+    display: none;
+}
+.nav-menu ul li a.btn:hover {
+    color: var(--white);
 }

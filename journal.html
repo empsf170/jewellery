@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal | Aura Luxury</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
@@ -81,10 +83,10 @@
             </div>
             <div class="category-grid">
                 <!-- Article 1 -->
-                <div class="category-card">
+                <div class="category-card" style="display: flex; flex-direction: column;">
                     <img src="img/article1.jpg" alt="Article Image"
                         style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 20px;">
+                    <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                         <span
                             style="color: var(--secondary-color); font-size: 0.8rem; text-transform: uppercase;">Jewelry
                             Guide</span>
@@ -92,35 +94,35 @@
                             the Perfect Engagement Ring</h4>
                         <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">A comprehensive guide to the 4Cs
                             and finding the ring of her dreams.</p>
-                        <a href="#" class="btn-link">Read More</a>
+                        <a href="#" class="btn-link" style="margin-top: auto; align-self: flex-start;">Read More</a>
                     </div>
                 </div>
                 <!-- Article 2 -->
-                <div class="category-card">
+                <div class="category-card" style="display: flex; flex-direction: column;">
                     <img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=600&q=80"
                         alt="Article Image" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 20px;">
+                    <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                         <span
                             style="color: var(--secondary-color); font-size: 0.8rem; text-transform: uppercase;">Gemstones</span>
                         <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin: 10px 0;">The Allure of
                             Sapphires</h4>
                         <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Exploring the history and
                             breathtaking beauty of the world's most sought-after blue gem.</p>
-                        <a href="#" class="btn-link">Read More</a>
+                        <a href="#" class="btn-link" style="margin-top: auto; align-self: flex-start;">Read More</a>
                     </div>
                 </div>
                 <!-- Article 3 -->
-                <div class="category-card">
+                <div class="category-card" style="display: flex; flex-direction: column;">
                     <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80"
                         alt="Article Image" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div style="padding: 20px;">
+                    <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                         <span
                             style="color: var(--secondary-color); font-size: 0.8rem; text-transform: uppercase;">Style</span>
                         <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin: 10px 0;">Styling Vintage
                             Timepieces</h4>
                         <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">How to seamlessly incorporate
                             vintage watches into a modern wardrobe.</p>
-                        <a href="#" class="btn-link">Read More</a>
+                        <a href="#" class="btn-link" style="margin-top: auto; align-self: flex-start;">Read More</a>
                     </div>
                 </div>
             </div>
@@ -158,7 +160,7 @@
                 <h2>Never Miss a Story</h2>
                 <p>Subscribe to our newsletter for the latest journal entries, collections, and exclusive invitations.
                 </p>
-                <form style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto;">
+                <form class="journal-newsletter-form" style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto;">
                     <input type="email" placeholder="Your email address"
                         style="flex: 1; padding: 15px; border: none; border-radius: 4px;" required>
                     <button type="submit" class="btn btn-primary" style="border-radius: 4px;">Subscribe</button>
